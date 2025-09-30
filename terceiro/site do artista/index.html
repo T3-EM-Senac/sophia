@@ -3,80 +3,125 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Heitor Villa-Lobos — Biografia</title>
+  <title>Heitor Villa-Lobos — Vida e Obra</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <header class="site-header">
-    <h1>Heitor Villa-Lobos</h1>
-    <p class="subtitle">Compositor brasileiro (1887 — 1959) — resumo biográfico e obras</p>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="logo">Villa-Lobos</a>
+      <ul class="nav-links">
+        <li><a href="#biografia">Biografia</a></li>
+        <li><a href="#obras">Obras</a></li>
+        <li><a href="#legado">Legado</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#referencias">Referências</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="hero" class="site-header">
+    <div class="hero-content">
+      <h1>Heitor Villa-Lobos</h1>
+      <p class="subtitle">O maestro que traduziu o Brasil em música (1887 — 1959)</p>
+      <a href="#biografia" class="btn">Conheça sua história</a>
+    </div>
   </header>
 
   <main class="container">
     <!-- BIOGRAFIA -->
     <section id="biografia" class="card">
-      <h2>Biografia (resumo)</h2>
+      <h2><i class="fa-solid fa-user"></i> Biografia</h2>
       <p>
-        Heitor Villa-Lobos (Rio de Janeiro, 5 de março de 1887 — 17 de novembro de 1959)
-        foi um dos maiores compositores brasileiros. Conhecido por integrar a música
-        popular e folclórica brasileira às formas clássicas europeias, deixou uma obra
-        vasta e diversificada. Entre suas criações mais célebres estão as
-        <em>Bachianas Brasileiras</em> e os <em>Chôros</em>.
+        Heitor Villa-Lobos nasceu no Rio de Janeiro em 5 de março de 1887. Autodidata, 
+        cresceu cercado por música popular e erudita, aprendendo violão, violoncelo e 
+        clarinete. Seu pai, Raul, incentivava o estudo da música e também da ciência.
       </p>
-      <p class="cite">Fontes: Encyclopaedia Britannica; Wikipedia; acervos públicos e museus.</p>
+      <p>
+        Villa-Lobos viajou pelo interior do Brasil, absorvendo a diversidade cultural e 
+        rítmica do país. Essa vivência influenciou profundamente sua obra, marcada pela 
+        fusão entre o folclore brasileiro e as técnicas da música clássica europeia.
+      </p>
+      <p>
+        Ao longo da vida, foi maestro, professor, organizador de projetos educacionais e 
+        um verdadeiro embaixador da música brasileira no exterior. Faleceu em 17 de novembro 
+        de 1959, deixando um legado eterno.
+      </p>
     </section>
 
-    <!-- OBRAS -->
+    <!-- PRINCIPAIS OBRAS -->
     <section id="obras" class="card">
-      <h2>Principais obras</h2>
+      <h2><i class="fa-solid fa-music"></i> Principais obras</h2>
       <ul>
-        <li><strong>Bachianas Brasileiras</strong> — série (1930–1945)</li>
-        <li><strong>Chôros</strong> — coleção de peças para formações diversas</li>
-        <li><strong>5 Prelúdios para violão</strong> (1940)</li>
-        <li><strong>12 Estudos para violão</strong> (1929)</li>
-        <li>Sinfonias, óperas, balés e música de câmara</li>
+        <li><strong>Bachianas Brasileiras</strong> (1930–1945) — fusão do estilo barroco de Bach com ritmos brasileiros.</li>
+        <li><strong>Chôros</strong> (1920–1929) — série de 14 peças que exploram desde solistas até grandes orquestras.</li>
+        <li><strong>5 Prelúdios para violão</strong> (1940) — obras líricas, hoje essenciais no repertório violonístico.</li>
+        <li><strong>12 Estudos para violão</strong> (1929) — exploram técnica e musicalidade, dedicados a Andrés Segovia.</li>
+        <li><strong>Cirandas</strong> e <strong>Cirandinhas</strong> — peças inspiradas em cantigas infantis brasileiras.</li>
+        <li>Óperas, sinfonias, quartetos de cordas e música coral — produção vasta e diversificada.</li>
       </ul>
-      <p class="cite">Mais detalhes e lista completa de obras em acervos especializados.</p>
+    </section>
+
+    <!-- LEGADO -->
+    <section id="legado" class="card">
+      <h2><i class="fa-solid fa-star"></i> Legado</h2>
+      <p>
+        Villa-Lobos é considerado o maior compositor das Américas. Sua obra levou a identidade 
+        brasileira aos palcos internacionais, conquistando reconhecimento em Paris, Nova York 
+        e além.
+      </p>
+      <p>
+        Também revolucionou a educação musical no Brasil: implantou o canto orfeônico nas 
+        escolas, defendendo a música como parte essencial da formação cidadã.
+      </p>
+      <p>
+        Hoje, seu nome batiza museus, parques, orquestras e concursos, reafirmando sua 
+        importância na cultura nacional.
+      </p>
     </section>
 
     <!-- GALERIA -->
     <section id="galeria" class="card">
-      <h2>Galeria</h2>
+      <h2><i class="fa-solid fa-image"></i> Galeria</h2>
       <div class="gallery">
         <figure>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Heitor-villa-Lobos-meeting-Walt-Disney.jpg" alt="Heitor Villa-Lobos com Walt Disney" />
-          <figcaption>Villa-Lobos com Walt Disney — Wikimedia Commons.</figcaption>
+          <img src="images/villa1.jpg" alt="Villa-Lobos jovem">
+          <figcaption>Villa-Lobos em sua juventude.</figcaption>
         </figure>
-
         <figure>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Monumento_a_Villa-Lobos%2C_Rio_de_Janeiro.jpg" alt="Monumento a Villa-Lobos no Rio de Janeiro" />
-          <figcaption>Monumento a Villa-Lobos — Rio de Janeiro.</figcaption>
+          <img src="images/villa2.jpg" alt="Villa-Lobos regendo orquestra">
+          <figcaption>Regendo orquestra em concerto internacional.</figcaption>
         </figure>
-
         <figure>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Parque_Villa-Lobos_busto.jpg" alt="Busto de Villa-Lobos no Parque Villa-Lobos" />
-          <figcaption>Busto no Parque Villa-Lobos — São Paulo.</figcaption>
+          <img src="images/villa3.jpg" alt="Monumento a Villa-Lobos no Rio de Janeiro">
+          <figcaption>Monumento em sua homenagem no Rio de Janeiro.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/villa4.jpg" alt="Partitura manuscrita por Villa-Lobos">
+          <figcaption>Partitura original manuscrita.</figcaption>
         </figure>
       </div>
-      <p class="note">Imagens em domínio público ou sob licença livre — confira as páginas no Wikimedia Commons.</p>
     </section>
 
     <!-- REFERÊNCIAS -->
     <section id="referencias" class="card">
-      <h2>Referências e créditos</h2>
+      <h2><i class="fa-solid fa-book"></i> Referências</h2>
       <ul>
-        <li>Heitor Villa-Lobos — Encyclopaedia Britannica</li>
-        <li>Heitor Villa-Lobos — Wikipedia (resumo e obras)</li>
-        <li>IMSLP — Partituras e acervo digital</li>
-        <li>Wikimedia Commons — Fotografias históricas e monumentos</li>
-        <li>Museu Villa-Lobos — Rio de Janeiro</li>
+        <li>Encyclopaedia Britannica — entrada sobre Villa-Lobos.</li>
+        <li>Wikipedia — artigos sobre vida e obras.</li>
+        <li>IMSLP — acervo de partituras digitais.</li>
+        <li>Museu Villa-Lobos — Rio de Janeiro.</li>
+        <li>Wikimedia Commons — imagens em domínio público.</li>
       </ul>
-      <p class="small">Conteúdo preparado por: <strong>SOPHIA</strong> — Trabalho Interdisciplinar.</p>
+      <p class="small">Site acadêmico desenvolvido por <strong>SOPHIA</strong> — Trabalho interdisciplinar.</p>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>Créditos das imagens: Wikimedia Commons. Verifique sempre as licenças antes de reutilizar.</p>
+    <p>© 2025 — Villa-Lobos. Conteúdo acadêmico e educacional.</p>
   </footer>
 
   <script src="script.js"></script>
