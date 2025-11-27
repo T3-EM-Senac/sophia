@@ -1,74 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Integração Web, Mobile e Banco de Dados — Spotify</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Integração Web, Mobile e Banco de Dados — Spotify</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="hero fade">
+    <h1>Spotify: Web, Mobile e Banco de Dados</h1>
+    <p class="delay">Como tecnologias se conectam em sistemas reais</p>
+  </header>
 
+  <main>
+    <section class="card fade">
+      <h2>Introdução</h2>
+      <div class="img-box">
+        <img src="https://i.imgur.com/Sl4C9kZ.jpeg" alt="Imagem Spotify Interface" />
+      </div>
+      <p>Este site explica como HTML, bancos de dados e aplicativos mobile trabalham juntos em sistemas reais, usando o Spotify como exemplo principal.</p>
+    </section>
 
-<header class="hero fade">
-<h1>Spotify: Web, Mobile e Banco de Dados</h1>
-<p class="delay">Como tecnologias se conectam em sistemas reais</p>
-</header>
+    <section class="card fade">
+      <h2>HTML e Web</h2>
+      <div class="img-box">
+        <img src="https://i.imgur.com/YpMQk6v.jpeg" alt="Imagem HTML Web" />
+      </div>
+      <p>HTML estrutura páginas que rodam no navegador. Com ele é possível exibir textos, imagens e botões que fazem parte da interface web do Spotify.</p>
+    </section>
 
+    <section class="card fade">
+      <h2>Bancos de Dados</h2>
+      <div class="img-box">
+        <img src="https://i.imgur.com/NSgq40q.jpeg" alt="Imagem Banco de Dados" />
+      </div>
+      <p>Bancos de dados armazenam músicas, álbuns, playlists, histórico e informações de milhões de usuários. Eles permitem que o Spotify recupere tudo rapidamente.</p>
+    </section>
 
-<section class="card fade">
-<h2>Introdução</h2>
-<div class="img-box">
-<img src="https://i.imgur.com/Sl4C9kZ.jpeg" alt="Imagem Spotify Interface">
-</div>
-<p>Este site explica como HTML, bancos de dados e aplicativos mobile trabalham juntos em sistemas reais, usando o Spotify como exemplo principal.</p>
-</section>
+    <section class="card fade">
+      <h2>Aplicativos Mobile</h2>
+      <div class="img-box">
+        <img src="https://i.imgur.com/TiWfV5Z.jpeg" alt="Imagem App Mobile Spotify" />
+      </div>
+      <p>O app do Spotify envia requisições ao servidor buscando playlists, artista, músicas e recomendações. A comunicação acontece via APIs.</p>
+    </section>
 
+    <section class="card fade">
+      <h2>Integração entre Web, Mobile e Banco de Dados</h2>
+      <div class="img-box">
+        <img src="https://i.imgur.com/8dD9voH.jpeg" alt="Imagem Integração Sistemas" />
+      </div>
+      <p>Tanto o site quanto o app fazem requisições ao servidor. O servidor consulta o banco de dados, processa e devolve os dados para exibição.</p>
+    </section>
 
-<section class="card fade">
-<h2>HTML e Web</h2>
-<div class="img-box">
-<img src="https://i.imgur.com/YpMQk6v.jpeg" alt="Imagem HTML Web">
-</div>
-<p>HTML estrutura páginas que rodam no navegador. Com ele é possível exibir textos, imagens e botões que fazem parte da interface web do Spotify.</p>
-</section>
+    <section class="card fade">
+      <h2>Exemplo Real: Spotify</h2>
+      <div class="img-box">
+        <img src="https://i.imgur.com/Iu3jQej.jpeg" alt="Imagem Pesquisa Spotify" />
+      </div>
+      <p>Quando o usuário procura uma música, o app envia a pesquisa para o servidor. O servidor consulta o banco de dados, encontra os resultados e envia de volta ao app ou ao site.</p>
+    </section>
+  </main>
 
-
-<section class="card fade">
-<h2>Bancos de Dados</h2>
-<div class="img-box">
-<img src="https://i.imgur.com/NSgq40q.jpeg" alt="Imagem Banco de Dados">
-</div>
-<p>Bancos de dados armazenam músicas, álbuns, playlists, histórico e informações de milhões de usuários. Eles permitem que o Spotify recupere tudo rapidamente.</p>
-</section>
-
-
-<section class="card fade">
-<h2>Aplicativos Mobile</h2>
-<div class="img-box">
-<img src="https://i.imgur.com/TiWfV5Z.jpeg" alt="Imagem App Mobile Spotify">
-</div>
-<p>O app do Spotify envia requisições ao servidor buscando playlists, artista, músicas e recomendações. A comunicação acontece via APIs.</p>
-</section>
-
-
-<section class="card fade">
-<h2>Integração entre Web, Mobile e Banco de Dados</h2>
-<div class="img-box">
-<img src="https://i.imgur.com/8dD9voH.jpeg" alt="Imagem Integração Sistemas">
-</div>
-<p>Tanto o site quanto o app fazem requisições ao servidor. O servidor consulta o banco de dados, processa e devolve os dados para exibição.</p>
-</section>
-
-
-<section class="card fade">
-<h2>Exemplo Real: Spotify</h2>
-<div class="img-box">
-<img src="https://i.imgur.com/Iu3jQej.jpeg" alt="Imagem Pesquisa Spotify">
-</div>
-<p>Quando o usuário procura uma música, o app envia a pesquisa para o servidor. O servidor consulta o banco de dados, encontra os resultados e envia de volta ao app ou ao site.</p>
-</section>
-
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
