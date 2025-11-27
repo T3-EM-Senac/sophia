@@ -1,62 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Spotify — Player Moderno</title>
-<link rel="stylesheet" href="style.css" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Spotify - Trabalho Final (Demo)</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-<header class="header">
-<div class="logo">Spotify</div>
-<nav class="menu">
-<a href="#home">Home</a>
-<a href="#search">Buscar</a>
-<a href="#playlists">Playlists</a>
-</nav>
-</header>
+  <header class="topbar">
+    <div class="brand">🎵 Spotify Edu</div>
+    <button id="themeToggle" class="theme-btn" aria-label="Alternar tema">🌙</button>
+  </header>
 
+  <main>
+    <section class="hero">
+      <h1>Como o Spotify funciona</h1>
+      <p>Integração entre Web, Mobile, APIs e Banco de Dados — demo para trabalho final.</p>
+      <a class="cta" href="#playlists">Ver playlists</a>
+    </section>
 
-<section id="home" class="hero">
-<h1>Escute sem limites.</h1>
-<p>Seu player moderno, bonito, rápido e inspirado no Spotify.</p>
-<button class="btn">Começar a ouvir</button>
-</section>
+    <section id="features" class="container">
+      <h2>Recursos principais</h2>
+      <div class="cards">
+        <div class="card"><strong>Web & HTML</strong><p>Interface e estrutura.</p></div>
+        <div class="card"><strong>APIs</strong><p>Comunicação entre app e servidor.</p></div>
+        <div class="card"><strong>Bancos de Dados</strong><p>Armazenamento de músicas e usuários.</p></div>
+      </div>
+    </section>
 
+    <section id="playlists" class="container">
+      <h2>Playlists em destaque</h2>
+      <div id="playlistGrid" class="playlist-grid"></div>
+    </section>
 
-<section id="search" class="search-section">
-<h2>Buscar músicas</h2>
-<input type="text" id="searchInput" placeholder="Digite o nome da música..." />
-<button onclick="searchMusic()" class="btn">Buscar</button>
-<div id="results" class="results"></div>
-</section>
+    <section id="about" class="container">
+      <h2>Sobre</h2>
+      <p>Esta versão é minimal, responsiva e funciona offline — perfeita pra apresentação.</p>
+    </section>
+  </main>
 
+  <footer class="footer">Feito para apresentação • Boa sorte na formatura 🎓</footer>
 
-<section id="playlists" class="playlist-section">
-<h2>Playlists em destaque</h2>
-<div class="playlist-grid">
-<div class="playlist-card">
-<img src="https://i.scdn.co/image/ab67706f000000029bb4d3c6c853fb29a8421931" />
-<h3>Top Brasil</h3>
-</div>
-<div class="playlist-card">
-<img src="https://i.scdn.co/image/ab67706f00000002ae6faba95ce53c6b66f0cc0d" />
-<h3>Pop Hits</h3>
-</div>
-<div class="playlist-card">
-<img src="https://i.scdn.co/image/ab67706f000000025c8e19fd166ed1a4d2b8a5fe" />
-<h3>Treino</h3>
-</div>
-</div>
-</section>
-
-
-<footer class="footer">Criado com carinho para o trabalho final 💚</footer>
-
-
-<script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
