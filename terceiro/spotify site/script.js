@@ -1,15 +1,25 @@
-const cards = document.querySelectorAll('.card');
+function searchMusic() {
+const input = document.getElementById("searchInput").value.trim();
+const results = document.getElementById("results");
 
-function showOnScroll(){
-    const trigger = window.innerHeight * 0.85;
 
-    cards.forEach(card => {
-        const top = card.getBoundingClientRect().top;
-        if(top < trigger){
-            card.classList.add('show');
-        }
-    });
+results.innerHTML = "";
+if (!input) {
+results.innerHTML = `<p>Digite algo para buscar.</p>`;
+return;
 }
 
-window.addEventListener('scroll', showOnScroll);
-window.addEventListener('load', showOnScroll);
+
+const fakeResults = [
+`Resultado para "${input}": Música encontrada!`,
+`Outra faixa relacionada a "${input}".`
+];
+
+
+fakeResults.forEach(r => {
+const item = document.createElement("div");
+item.className = "result-item";
+item.textContent = r;
+results.appendChild(item);
+});
+}

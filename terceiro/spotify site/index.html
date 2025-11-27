@@ -1,70 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify — Web, Mobile e Banco de Dados</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Spotify — Player Moderno</title>
+<link rel="stylesheet" href="style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<header class="hero">
-    <div class="overlay"></div>
-    <h1>Como o Spotify funciona</h1>
-    <p>Integração entre Web, Mobile, APIs e Banco de Dados</p>
+<header class="header">
+<div class="logo">Spotify</div>
+<nav class="menu">
+<a href="#home">Home</a>
+<a href="#search">Buscar</a>
+<a href="#playlists">Playlists</a>
+</nav>
 </header>
 
-<main>
 
-<section class="section">
-    <h2>Introdução</h2>
-    <div class="card">
-        <img src="https://i.imgur.com/nknPd8U.jpeg" alt="">
-        <p>Entenda como tecnologias como HTML, apps mobile, servidores e bancos de dados se conectam para fazer o Spotify funcionar.</p>
-    </div>
+<section id="home" class="hero">
+<h1>Escute sem limites.</h1>
+<p>Seu player moderno, bonito, rápido e inspirado no Spotify.</p>
+<button class="btn">Começar a ouvir</button>
 </section>
 
-<section class="section">
-    <h2>HTML e Web</h2>
-    <div class="card">
-        <img src="https://i.imgur.com/ZOLj2qr.jpeg" alt="">
-        <p>O HTML estrutura páginas acessadas pelo navegador. Ele organiza textos, botões, imagens e menus — como a interface Web do Spotify.</p>
-    </div>
+
+<section id="search" class="search-section">
+<h2>Buscar músicas</h2>
+<input type="text" id="searchInput" placeholder="Digite o nome da música..." />
+<button onclick="searchMusic()" class="btn">Buscar</button>
+<div id="results" class="results"></div>
 </section>
 
-<section class="section">
-    <h2>Bancos de Dados</h2>
-    <div class="card">
-        <img src="https://i.imgur.com/smgPVWY.jpeg" alt="">
-        <p>O banco de dados armazena músicas, artistas, playlists, histórico e informações de milhões de usuários.</p>
-    </div>
+
+<section id="playlists" class="playlist-section">
+<h2>Playlists em destaque</h2>
+<div class="playlist-grid">
+<div class="playlist-card">
+<img src="https://i.scdn.co/image/ab67706f000000029bb4d3c6c853fb29a8421931" />
+<h3>Top Brasil</h3>
+</div>
+<div class="playlist-card">
+<img src="https://i.scdn.co/image/ab67706f00000002ae6faba95ce53c6b66f0cc0d" />
+<h3>Pop Hits</h3>
+</div>
+<div class="playlist-card">
+<img src="https://i.scdn.co/image/ab67706f000000025c8e19fd166ed1a4d2b8a5fe" />
+<h3>Treino</h3>
+</div>
+</div>
 </section>
 
-<section class="section">
-    <h2>Aplicativos Mobile</h2>
-    <div class="card">
-        <img src="https://i.imgur.com/Nidc7yJ.jpeg" alt="">
-        <p>O app envia requisições para o servidor via API, pedindo músicas, playlists e recomendações personalizadas.</p>
-    </div>
-</section>
 
-<section class="section">
-    <h2>Integração Completa</h2>
-    <div class="card">
-        <img src="https://i.imgur.com/0IBgA0A.jpeg" alt="">
-        <p>App e site se conectam ao mesmo servidor. Ele consulta o banco de dados e retorna rapidamente os resultados.</p>
-    </div>
-</section>
+<footer class="footer">Criado com carinho para o trabalho final 💚</footer>
 
-<section class="section">
-    <h2>Exemplo Real</h2>
-    <div class="card">
-        <img src="https://i.imgur.com/lvG4eFj.jpeg" alt="">
-        <p>Ao pesquisar uma música, sua busca vai para o servidor, que consulta o banco de dados e devolve a resposta instantaneamente.</p>
-    </div>
-</section>
-
-</main>
 
 <script src="script.js"></script>
 </body>

@@ -1,91 +1,65 @@
-/* Fonte moderna */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
-
-:root{
-    --green: #1db954;
-    --card-bg: rgba(255,255,255,0.08);
-    --border: rgba(255,255,255,0.15);
+* {
+border: none;
+border-radius: 30px;
+cursor: pointer;
+color: #000;
+font-weight: 600;
+transition: 0.3s;
+}
+.btn:hover {
+transform: scale(1.05);
 }
 
-body{
-    margin: 0;
-    background: linear-gradient(135deg, #000, #0e1a1d, #1b1b1b);
-    font-family: 'Inter', sans-serif;
-    color: #fff;
+
+.search-section, .playlist-section {
+padding: 80px 40px;
+}
+.search-section h2, .playlist-section h2 {
+margin-bottom: 20px;
+font-size: 28px;
+}
+#searchInput {
+width: 300px;
+padding: 10px;
+border-radius: 6px;
+border: none;
+margin-right: 10px;
+}
+.results {
+margin-top: 20px;
+}
+.result-item {
+background: #1e1e1e;
+padding: 15px;
+border-radius: 10px;
+margin-bottom: 10px;
 }
 
-/* HERO */
-.hero{
-    position: relative;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-image: url('https://i.imgur.com/gkZreT6.jpeg');
-    background-size: cover;
-    background-position: center;
+
+.playlist-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+gap: 20px;
+}
+.playlist-card {
+background: #1e1e1e;
+padding: 15px;
+border-radius: 14px;
+text-align: center;
+transition: 0.3s;
+}
+.playlist-card:hover {
+transform: translateY(-5px);
+}
+.playlist-card img {
+width: 100%;
+border-radius: 10px;
 }
 
-.hero .overlay{
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.55);
-    backdrop-filter: blur(2px);
-}
 
-.hero h1, .hero p{
-    position: relative;
-    z-index: 2;
-}
-
-.hero h1{
-    font-size: 2rem;
-    margin-bottom: 5px;
-    color: var(--green);
-}
-
-.hero p{
-    opacity: .9;
-}
-
-/* SEÇÕES */
-.section{
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: auto;
-}
-
-.section h2{
-    color: var(--green);
-    margin-bottom: 12px;
-}
-
-/* CARD GLASS */
-.card{
-    padding: 20px;
-    border-radius: 18px;
-    background: var(--card-bg);
-    border: 1px solid var(--border);
-    backdrop-filter: blur(10px);
-    text-align: center;
-    box-shadow: 0 5px 25px rgba(0,0,0,0.35);
-}
-
-.card img{
-    width: 100%;
-    border-radius: 12px;
-    margin-bottom: 15px;
-}
-
-/* ANIMAÇÃO */
-.fade-up{
-    opacity: 0;
-    transform: translateY(25px);
-    transition: .8s ease;
-}
-
-.fade-up.show{
-    opacity: 1;
-    transform: translateY(0);
+.footer {
+text-align: center;
+padding: 20px;
+background: #000;
+margin-top: 40px;
 }
