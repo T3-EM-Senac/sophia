@@ -1,17 +1,15 @@
-// Espera o DOM carregar para garantir que os elementos existam
-document.addEventListener('DOMContentLoaded', () => {
-  const elements = document.querySelectorAll('.fade');
+const cards = document.querySelectorAll('.card');
 
-  function checkFade() {
-    const trigger = window.innerHeight * 0.9;
-    elements.forEach(el => {
-      const rectTop = el.getBoundingClientRect().top;
-      if (rectTop < trigger) el.classList.add('show');
+function showOnScroll(){
+    const trigger = window.innerHeight * 0.85;
+
+    cards.forEach(card => {
+        const top = card.getBoundingClientRect().top;
+        if(top < trigger){
+            card.classList.add('show');
+        }
     });
-  }
+}
 
-  // executa no load e no scroll / resize
-  checkFade();
-  window.addEventListener('scroll', checkFade);
-  window.addEventListener('resize', checkFade);
-});
+window.addEventListener('scroll', showOnScroll);
+window.addEventListener('load', showOnScroll);
